@@ -1,0 +1,35 @@
+@mixin font-face($font-family, $url, $weight) {
+    @font-face {
+        font-family: '#{$font-family}';
+        src: url('../fonts/#{$url}.woff2') format('woff2'),
+        url('../fonts/#{$url}.woff') format('woff');
+        font-weight: #{$weight};
+        font-display: swap;
+        font-style: normal;
+    }
+}
+
+@mixin clearListStyles {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin clearBtnStyles {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    cursor: pointer;
+}
+
+@mixin notify-hashtag {
+    padding: 6px 14px;
+    position: absolute;
+    font-size: 14px;
+    line-height: 16px;
+    color: $whiteColor;
+    background: #333;
+}

@@ -1,0 +1,151 @@
+@import '_variables.scss';
+
+@media (min-width: 1200px) {
+  .header {
+    .header-container__list {
+
+      .nav-list__link:hover {
+        color: $accentColor1;
+      }
+
+      .nav-list__link:focus-visible {
+        outline: none;
+        background-color: $accentColor1;
+      }
+
+      .nav-list__link:active {
+        color: $accentColor3;
+      }
+    }
+
+    .social__item:hover .social__link svg path {
+      transition: fill .15s linear;
+      fill: $accentColor1;
+    }
+
+    .social__item .social__link:focus-visible {
+      outline: none;
+    }
+
+    .social__item .social__link:focus-visible svg path {
+      outline: none;
+      transition: fill .15s linear;
+      fill: $accentColor2;
+    }
+  }
+
+  .hero {
+
+    .hero-content__btn:hover {
+      transition: background-color .15s linear;
+      background-color: $accentColor2;
+    }
+
+    .hero-content__btn:focus-visible {
+      outline: 3px solid $accentColor3
+    }
+
+    .hero-content__btn:active {
+      background-color: $accentColor3;
+    }
+
+  }
+
+  .about {
+    .form__btn:hover {
+      transition: background-color .15s linear;
+      background-color: $accentColor2;
+    }
+
+    .form__btn:focus-visible {
+      outline: 3px solid $accentColor1;
+    }
+
+    .form__btn:active {
+      background-color: $accentColor3;
+    }
+
+    .form__input:hover::placeholder {
+      transition: color .15s linear;
+      color: $accentColor1;
+    }
+
+    .form__input:focus-visible {
+      outline: 1px solid $accentColor1;
+    }
+  }
+
+  .projects {
+
+    .grid-article__btn:hover {
+      transition: background-color .15s linear;
+      background-color: $accentColor1;
+    }
+
+    .grid-article__btn:focus-visible {
+      outline: 3px solid $accentColor1;
+      background-color: $accentColor2;
+    }
+
+    .grid-article__btn:active {
+      outline: 3px solid $accentColor3;
+      background-color: $accentColor3;
+    }
+  }
+
+  .contacts {
+    .contacts-form {
+      .contacts-form__btn:hover {
+        transition: background-color .15s linear;
+        background-color: $accentColor2;
+      }
+
+      .contacts-form__btn:focus-visible {
+        outline: 3px solid $accentColor2;
+      }
+
+      .contacts-form__btn:active {
+        background-color: $accentColor3;
+      }
+
+      .contacts-form__input:hover::placeholder,
+      .contacts-form__textarea:hover::placeholder {
+        transition: color .15s linear;
+        color: $accentColor1;
+      }
+
+      .contacts-form__input:focus-visible,
+      .contacts-form__textarea:focus-visible {
+        outline: 1px solid $accentColor1;
+      }
+
+      .contacts-form__input:active,
+      .contacts-form__textarea:active {
+        outline: none;
+      }
+    }
+
+    .map-mask__btn:hover svg circle {
+        transition: fill .15s linear;
+      fill: $accentColor1;
+    }
+  }
+
+  .footer {
+
+    .social__item:hover .social__link svg path {
+      transition: fill .15s linear;
+      fill: $accentColor1;
+    }
+
+    .social__item .social__link:focus-visible {
+      outline: none;
+    }
+
+    .social__item .social__link:focus-visible svg path {
+      outline: none;
+      transition: fill .15s linear;
+      fill: $accentColor2;
+    }
+  }
+}

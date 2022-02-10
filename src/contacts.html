@@ -1,0 +1,39 @@
+<section class="contacts">
+  <div class="container contacts-container">
+    <h2 class="contacts__title">Контакты</h2>
+    <div class="contacts-container__wrapper">
+      <div id="map" class="contacts-container__map">
+        <article class="contacts-container__map-mask map-mask">
+          <button class="map-mask__btn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="10" fill="#666666"/>
+              <rect x="6.20712" y="5.5" width="12" height="1" transform="rotate(45 6.20712 5.5)" fill="white"/>
+              <rect x="5.5914" y="13.9854" width="12" height="1" transform="rotate(-45 5.5914 13.9854)" fill="white"/>
+            </svg>              
+          </button>
+          <h3 class="map-mask__title">Студия “High pass”</h3>
+          <address class="map-mask__address">107045, Москва, Даев переулок, дом&nbsp;41, бизнес-центр &laquo;Даев
+            Плаза&raquo;, этаж&nbsp;8, офис &#8470;&nbsp;82</address>
+          <a href="tel:+7 (495) 42-423-532" class="map-mask__link">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.7">
+              <path d="M18.3425 14.0983C17.215 14.0983 16.1242 13.915 15.1067 13.585C14.7858 13.475 14.4283 13.5575 14.1808 13.805L12.7417 15.6108C10.1475 14.3733 7.71833 12.0358 6.42583 9.35L8.21333 7.82833C8.46083 7.57167 8.53417 7.21417 8.43333 6.89333C8.09417 5.87583 7.92 4.785 7.92 3.6575C7.92 3.1625 7.5075 2.75 7.0125 2.75H3.84083C3.34583 2.75 2.75 2.97 2.75 3.6575C2.75 12.1733 9.83583 19.25 18.3425 19.25C18.9933 19.25 19.25 18.6725 19.25 18.1683V15.0058C19.25 14.5108 18.8375 14.0983 18.3425 14.0983Z" fill="white"/>
+              </g>
+            </svg>
+            +7 (495) 42-423-532
+          </a>
+        </article>
+      </div>
+      <form action="https://jsonplaceholder.typicode.com/posts" method="POST"
+        class="contacts-container__form contacts-form">
+        <h3 class="contacts-form__title">Оставить заявку</h3>
+        <p class="contacts-form__descr">Оставьте ваши данные, указав в графе “Комментарий” желаемые время и дату съемки
+          или другого мероприятия</p>
+        <input type="text" name="name" placeholder="Имя" class="contacts-form__input" required>
+        <input type="email" name="e-mail" placeholder="E-mail" class="contacts-form__input" required>
+        <textarea name="comments" placeholder="Комментарий" class="contacts-form__textarea"></textarea>
+        <button type="submit" class="contacts-form__btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>

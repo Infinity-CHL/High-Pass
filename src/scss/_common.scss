@@ -1,0 +1,60 @@
+@import '_variables.scss';
+@import '_fonts.scss';
+
+
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'TTFirsNeue', Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+picture {
+    font-size: 0;
+}
+
+.container {
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}

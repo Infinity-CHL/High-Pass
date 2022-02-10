@@ -1,0 +1,48 @@
+@import '_mixin.scss';
+@import '_variables.scss';
+
+.header {
+  background-color: $mainColor;
+}
+
+.header-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .nav-list {
+    display: flex;
+    @include clearListStyles();
+
+    &__item {
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 400;
+
+      &:not(:last-child) {
+        margin-right: 79px;
+      }
+
+    }
+
+    &__link {
+      padding: 0 1px;
+      color: $whiteColor;
+      transition: color .15s linear;
+    }
+  } 
+
+  .social {
+
+    &__list {
+        display: flex;
+      @include clearListStyles();
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+  }
+}

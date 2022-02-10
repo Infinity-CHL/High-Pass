@@ -1,0 +1,150 @@
+@import '_variables.scss';
+@import 'mixin.scss';
+
+.contacts {
+  
+  &__title {
+    margin-bottom: 22px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .contacts-container {
+    padding-bottom: 68px;
+
+    &__map {
+      position: relative;
+      max-width: 850px;
+      max-height: 460px;
+      width: 100%;
+    }
+    .contacts-container__wrapper {
+      display: grid;
+      grid-template-columns: 850px 1fr;
+      gap: $gutterGap;
+  
+      .map-mask {
+        padding: 175px 50px 150px 60px;
+        max-width: 410px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(32, 32, 32, 0.85);
+        z-index: 1;
+
+        &__btn {
+          @include clearBtnStyles();
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+
+        &__title {
+          margin-bottom: 5px;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 22px;
+          color: $whiteColor;
+        }
+
+        &__address {
+          margin-bottom: 3px;
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: $lighGray;
+        }
+
+        &__link {
+          display: flex;
+          align-items: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          color: $whiteColor;
+        }
+      }
+  
+      .contacts-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 410px;
+  
+        &__title {
+          margin-bottom: 5px;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 22px;
+        }
+  
+        &__descr {
+          margin-bottom: 14px;
+          font-family: 'Roboto';
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: $lighGray;
+        }
+  
+        &__input {
+          padding: 16px 0 16px 23px;
+          margin-bottom: 20px;
+          border: none;
+          font-family: 'Roboto';
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #202020;
+          background-color: #e9e9e9;
+  
+          &::placeholder {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #999;
+          }
+        }
+  
+        &__textarea {
+          padding: 15px 0 0 23px;
+          margin-bottom: 20px;
+          min-height: 150px;
+          color: #202020;
+          background-color: #e9e9e9;
+          border: none;
+          resize: none;
+  
+          &::placeholder {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #999;
+          }
+        }
+  
+        &__btn {
+          @include clearBtnStyles();
+          align-self: flex-start;
+          padding: 15.5px 22px;
+          font-family: 'Roboto';
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          color: $whiteColor;
+          outline: 3px solid transparent;
+          background-color: $accentColor1;
+  
+        }
+      }
+    }
+  }
+
+}

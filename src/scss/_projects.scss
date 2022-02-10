@@ -1,0 +1,165 @@
+@import '_mixin.scss';
+@import '_variables.scss';
+
+.projects {
+
+  .projects-container {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: $gutterGap;
+
+    .grid-card1 {
+
+      .grid-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: $gutterGap;
+
+        @include clearListStyles();
+
+        &__descr {
+          margin-bottom: 10px;
+        }
+
+        &__date {
+          display: flex;
+          align-items: center;
+          font-family: 'Roboto';
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 22px;
+          color: #999;
+        }
+      }
+    }
+
+    .grid-card4 {
+
+      .grid-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: $gutterGap;
+
+        @include clearListStyles();
+      }
+    }
+
+    .grid-list {
+
+      &__item {
+        position: relative;
+
+        .notify-hashtag {
+          @include notify-hashtag();
+          top: 7px;
+          right: 7px;
+        }
+
+      }
+
+      &__img img {
+        margin-bottom: 18px;
+      }
+    }
+
+    .grid-article {
+      position: relative;
+      padding: 22px 0 30px 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+      &__content {
+        max-width: 393px;
+        color: $whiteColor;
+      }
+
+      &__date {
+        margin-bottom: 2px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+      }
+
+      &__title {
+        margin-bottom: 6px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+      }
+
+      &__descr {
+        margin-bottom: 54px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      &__btn {
+        @include clearBtnStyles();
+        padding: 15.5px 22px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        outline: 3px solid #ff6e30;
+        color: $whiteColor;
+      }
+
+      .notify-hashtag {
+        @include notify-hashtag();
+        top: 7px;
+        right: 7px;
+      }
+    }
+
+    .grid-card2 {
+      background-image: url(../img/projects/desktop/projects-img4.jpg);
+    }
+
+    .grid-card3 {
+      background-image: url(../img/projects/desktop/projects-img5.jpg);
+    }
+
+    .grid-card4 {
+
+      .grid-list {
+        grid-template-columns: 1fr 1fr;
+
+        &__descr {
+          margin-bottom: 10px;
+        }
+
+        &__date {
+          font-family: 'Roboto';
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 22px;
+          color: #999;
+        }
+
+      }
+
+    }
+
+  }
+
+}
