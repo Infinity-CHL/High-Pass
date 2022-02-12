@@ -21,6 +21,20 @@
     grid-template-columns: 1fr 1fr;
     gap: $gutterGap;
 
+    &__item {
+      opacity: 0;
+      transform: translateY(-50px);
+      transition: transform .7s ease-in-out, opacity .7s ease-in-out;
+    }
+
+    &__item.animation-class {
+      opacity: 1;
+      transform: translateY(0);
+      transition: transform .7s ease-in-out, opacity .7s ease-in-out;
+    }
+
+
+
     .grid-card1 {
 
       .grid-list {

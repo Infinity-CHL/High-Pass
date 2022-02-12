@@ -1,0 +1,30 @@
+@import '_mixin.scss';
+@import '_variables.scss';
+
+@media (max-width: 1024px) {
+    .header {
+        .nav-list {
+            &__item:not(:last-child) {
+                margin-right: 33px;
+            }
+        }
+
+        .social {
+            display: none;
+        }
+
+        .header-container__btn {
+            display: block;
+        }
+    }
+    .hero {
+        .hero-container {
+            grid-template-rows: minmax(10px, 50px) minmax(186px, 332px) minmax(105px, 186px);
+
+            &__content {
+                padding: 425px 9px 30px 30px;
+                background-image: url(../img/hero/1024/camera.jpg);
+            }
+        }
+    }
+}

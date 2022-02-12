@@ -21,7 +21,7 @@
     }
     .contacts-container__wrapper {
       display: grid;
-      grid-template-columns: 850px 1fr;
+      grid-template-columns: minmax(320px, 850px) minmax(429px, 410px);
       gap: $gutterGap;
   
       .map-mask {

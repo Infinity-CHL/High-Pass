@@ -3,6 +3,15 @@
 
 .header {
   background-color: $mainColor;
+  &.fixed .nav-list__item:not(:last-child){
+    margin-right: 40px;
+  }
+  &.fixed .nav-list {
+    margin-right: 30px;
+  }
+  &.fixed .social {
+    display: none;
+  }
 }
 
 .header-container {
@@ -11,6 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   .nav-list {
     display: flex;
@@ -44,5 +54,10 @@
     &__item:not(:last-child) {
         margin-right: 20px;
     }
+  }
+
+  &__btn {
+    @include clearBtnStyles();
+    display: none;
   }
 }
